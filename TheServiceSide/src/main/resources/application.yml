@@ -1,4 +1,15 @@
 spring:
+  # redis
+  redis:
+    host: 118.31.54.149
+    port: 8379
+    lettuce:
+      pool:
+        max-active: 100
+        max-idle: 10
+        max-wait: 100000
+      shutdown-timeout: 5000
+    password: dqhd12138@
   # jdbc 路径
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
