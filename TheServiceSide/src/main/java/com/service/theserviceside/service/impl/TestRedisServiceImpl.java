@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 public class TestRedisServiceImpl implements TestRedisService {
 
     @Resource
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, String> redisTemplate;
 
     @Override
     public void testRedis() {
